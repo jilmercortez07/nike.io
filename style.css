@@ -1,0 +1,625 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: rgb(0, 0, 0);
+    height: 1200px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.shop {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    height: 100%;
+}
+
+nav {
+   margin-top: 10px;
+    height: 60px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;  
+}
+
+nav li {
+    text-align: center;
+    display: flex;
+    margin: 30px;
+}
+
+li:hover {
+    color: rgb(255, 111, 0);
+}
+
+nav .logo {
+    margin-right: 350px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav .input {
+    margin-left: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 100px;
+    text-align: center;
+    width: 130px;
+    border-style: none;
+    height: 35px;
+    background-color: rgb(75, 75, 75);
+    color: white;
+}
+
+nav .input::placeholder {
+    color: rgb(219, 219, 219);
+}
+
+.BigContainer {
+    height: 550px;
+    background-color: rgb(225, 58, 58);
+    width: 100%;
+    
+}
+
+ .logo img {
+    height: 15px;
+    width: auto;   
+}
+ 
+.womanScarf {
+    height: 600px;
+    width: auto;
+    position: absolute;
+    left:80px;
+    top: 120px;
+}
+
+.womanScarf:hover {
+    height: 650px;
+    animation: floatingEffect 4s infinite linear;
+    z-index: 2;
+}
+
+@keyframes floatingEffect {
+    0% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(-5px);
+    }
+}
+
+.shoes {
+    height: 450px;
+    width: auto;
+    position: absolute;
+    left: 520px;
+    top: 100px;
+    transition: transform 2s ease-in-out ;
+    
+}
+
+.shoes:hover {
+    height: 450px;
+    z-index: 12;
+    animation: floatingEffect 4s infinite linear;
+}
+
+@keyframes floatingEffect {
+    0% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(-5px);
+    }
+}
+    
+.womenBlue {
+    height: 500px;
+    width: auto;
+    position: absolute;
+    left: 1050px;
+    top: 200px;
+    z-index: 2;
+}
+
+.womenBlue:hover {
+    z-index: 12;
+    animation: floatingEffect 4s infinite linear;
+}
+
+@keyframes floatingEffect {
+    0% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(-5px);
+    }
+}
+ 
+
+.twoPeople {
+    height: 500px;
+    width: auto;
+    position: absolute;
+    left: 700px;
+    top: 450px;
+    z-index: 1;
+}
+
+.twoPeople:hover{
+    z-index: 12;
+    animation: floatingEffect 4s infinite linear;
+}
+
+@keyframes floatingEffect {
+    0% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(-5px);
+    }
+}
+ 
+.nikeLogo {
+    height: 100px;
+    width: auto;
+}
+
+.nikeContainer  {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width:200px;
+    position: absolute;
+    left: 650px;
+    z-index: 5;
+}
+
+.nikeLogos  {
+    display: flex;
+    flex-direction: column;
+    width:200px;
+}
+
+.nikeLogo  img {
+    margin: 10px;
+    width:200px;
+}
+
+.container img {
+    margin: 100px;
+}
+
+.containerQuote {
+    display: flex;
+    flex-direction: column;
+}
+
+.bigtext{
+    position: absolute;
+    font-size: 100px;
+    top: 450px;
+    z-index: 1;
+    color: white;
+}
+
+.inverted {
+   margin-top: 700px;
+   color: rgb(77, 77, 77);
+   font-size: 100px;
+}
+
+.mainTitle {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+}
+
+.titleColumn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.title {
+    font-size: 30px;
+    color: rgb(21, 21, 21);
+}
+
+.price {
+    font-size: 20px;
+    color: rgb(21, 21, 21);
+    margin-top: 10px;
+}
+
+.fontTitle {
+    margin-top: 150px;
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.line {
+    height: 1px;
+    width: 1015px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 10px;
+    background: linear-gradient(to right, #F3ECD3, #ff6600, #d6bb56, #ff6600);
+    background-size: 200% auto;
+    animation: gradientMove 7s linear infinite;
+}
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.men {
+    margin-top: 8px;
+    margin-left: 20px;
+    color: rgb(21, 21, 21);
+}
+
+.pickSize {
+    color: rgb(21, 21, 21);
+}
+
+.sizeGuide {
+    color: rgb(21, 21, 21); 
+}
+
+.shoeImages {
+    height: 80px;
+    width: 80px;
+    margin: 7.5px;
+    border-radius: 2px;
+}
+
+button.size:hover {
+    border-color: rgb(255, 128, 0);
+    border-style:solid;
+}
+
+button.addtoBag{
+    margin-top: 50px;
+    height: 55px;
+    width: 350px;
+    border-radius: 0px;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    border-style: none;
+}
+
+button.addtoBag:hover {
+    background-color: #ff6600;
+}
+
+button.addtoBag.clicked {
+    background-color:#ff6600;
+}
+
+button.favorite {
+    margin-top: 10px;
+    height: 55px;
+    width: 350px;
+    border-radius: 0px;
+    border: 1px solid rgb(24, 24, 24);;
+    background-color: white;
+}
+
+button.favorite:hover {
+    border: 2px solid #ff6600;
+    
+}
+
+.description {
+    color: rgb(131, 131, 131);
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 250px;
+    margin-left: 150px;
+   
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+}
+
+.reviewContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.reviews {
+    color: black;
+    font-size: 18px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+img.stars {
+    height: 23px;
+    width: 115px;
+    margin-left: 145px;
+    margin-top: -10px;
+}
+
+.model {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.model img {
+    height: auto;
+    width: 1300px;
+}
+ 
+.cushion {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.modelContainer {
+    margin-top: 100px;
+}
+
+.cushionDetails {
+    color: rgb(98, 98, 98);
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.mightLikeContainer {
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    margin-left: 60px;
+}
+
+#mightLike {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;    
+}
+
+.mightLikeText {
+    color: black;
+    font-size: 19px;
+    margin-left: 70px;
+}
+
+.shoeMightLikeImage {
+    width: 400px;
+    height: auto;
+    margin-right:10px;
+    margin-left: 10px;
+}
+
+.nameOfShoe {
+    color: black;
+}
+
+.gender {
+    color: black;
+}
+
+.priceShoe {
+    color: black;
+}
+
+.footerContainerMain {
+    display: flex;
+   flex-wrap: wrap;
+    height:400px;
+    background-color: rgb(26, 26, 26);
+    width: 100%;
+    margin-top: 500px;
+}
+
+.footerContainer{
+    display: flex;
+   flex-wrap: wrap;
+    height:400px;
+    background-color: rgb(26, 26, 26);
+    width: 100%;
+}
+
+.footerDetails {
+    margin-right: 800px;
+}
+
+.footerDetails li {
+    margin-bottom: 10px;
+}
+
+.footerList {
+    list-style: none;
+    line-height: 2;
+    color:#F3ECD3;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.greyText {
+    color: rgb(188, 188, 188);
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.greyText li{
+    margin-bottom: 10px;
+}
+.shoeName {
+    color: black;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.genderName {
+    color: rgb(169, 169, 169);
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+.priceShoe {
+    color: black;
+    margin-left: 10px;
+    margin-bottom: 70px;
+}
+
+.skyLimit {
+    margin-bottom: 150px;
+}
+
+.mainImage {
+    height: auto;
+    width: 700px;
+    margin-left: 10px;
+}
+
+.size {
+    margin: 5px;
+    margin-right: 0;
+    height: 55px;
+    width: 65px;
+    border-radius: 0px;
+    border-style: none;
+    background-color: rgb(72, 72, 72);
+    color: white;
+    font-size: 14px;
+}
+
+.shoeContainerSize {
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+   
+}
+
+#shoeColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.columnImage {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.columnImage:hover {
+    border: #ff6600  solid;
+}
+
+.buttonSection {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.selectContainer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 50px;
+} 
+
+.sizeInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.sizeGuide {
+    margin-left: 370px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.klara {
+    color: black;
+    margin-top: 25px;
+}
+
+.smallLogoSize {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.smallLogos {
+    display: flex;
+    flex-direction: row;
+}
+
+h3 {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.noHover:hover {
+    color: #F3ECD3;
+}
